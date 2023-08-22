@@ -1,10 +1,10 @@
 export abstract class DioAccount {
-  private name: string;
+  private readonly name: string;
   private readonly accountNumber: number;
   private status: boolean = true;
-  deposit: number = 0
-  withdraw: number = 0
-  balance: number = 0;
+  private deposit: number = 0
+  private withdraw: number = 0
+  private balance: number = 0;
 
   constructor(name: string, accountNumber: number, balance: number) {
     this.name = name;
@@ -12,10 +12,10 @@ export abstract class DioAccount {
     this.balance = balance
   }
 
-  setName = (name: string): void => {
-    this.name = name;
-    console.log("Name has been changed");
-  };
+  // setName = (name: string): void => {
+  //   this.name = name;
+  //   console.log("Name has been changed");
+  // };
 
   getName = (): string => {
     return this.name;
@@ -24,7 +24,7 @@ export abstract class DioAccount {
   setDeposit = (deposit: number): number => {
     if (this.validateStatus()) {
       this.balance = this.balance + deposit
-      console.log("You deposited " + "R$" + deposit + " to your account" );
+      console.log("A deposit of " + "R$" + deposit + " was made to your account" );
     }
     return deposit
   };
