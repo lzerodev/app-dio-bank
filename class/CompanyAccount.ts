@@ -13,7 +13,7 @@ export class CompanyAccount extends DioAccount {
       "You loan " +
         "R$" +
         loan +
-        ". You better pay as established in the contract kkk"
+        ". You better pay as established in the contract!"
     );
     return loan;
   };

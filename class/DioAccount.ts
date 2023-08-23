@@ -12,15 +12,6 @@ export abstract class DioAccount {
     this.balance = balance;
   }
 
-  // setName = (name: string): void => {
-  //   this.name = name;
-  //   console.log("Name has been changed");
-  // };
-
-  getName = (): string => {
-    return this.name;
-  };
-
   setDeposit = (deposit: number): void => {
     if (this.validateStatus()) {
       this.balance += deposit;
