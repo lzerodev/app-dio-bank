@@ -34,7 +34,7 @@ companyAccount.setWithdraw(withdrawAmountPJ);
 const loanAmountPJ = 10000; // The amount you want to loan
 companyAccount.getLoan(loanAmountPJ)
 
-companyAccount.getBalance()// Show your new current balance
+companyAccount.getBalance()// Show your new PJ balance
 
 
 
@@ -51,4 +51,4 @@ investmentAccount.setInvestment(depositAmountInvest);
 const withdrawAmountInvest = 1500; // The amount you want to withdraw from you Investment Account account
 investmentAccount.setWithdraw(withdrawAmountInvest);
 
-investmentAccount.getBalance()// Show your new current balance
+investmentAccount.getBalance()// Show your new Investment Account balance
